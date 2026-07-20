@@ -12,11 +12,11 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.5.0"}
-  "base"
-  "basement"
-  "ppxlib_jane"
-  "dune"        {>= "3.17.0"}
-  "ppxlib"      {>= "0.38.0"}
+  "base" {>= "v0.18~" & < "v0.19~"}
+  "basement" {>= "v0.18~" & < "v0.19~"}
+  "ppxlib_jane" {>= "v0.18~" & < "v0.19~"}
+  "dune" {>= "3.17.0"}
+  "ppxlib" {>= "0.38.0"}
 ]
 available: arch != "x86_32"
 synopsis: "Ppx extension for deriving a witness that a type is intended to be stable.  In this\n   context, stable means that the serialization format will never change.  This allows\n   programs running at different versions of the code to safely communicate."
